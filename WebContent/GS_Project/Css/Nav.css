@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+.underMenu li {
+	margin: 180px;
+	display: inline;
+	float: left;
+	margin-top: 10px;
+	margin-left: -130px;
+}
+.underMenuFont {
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	color: #ffffff;
+	font-family: 휴먼둥근헤드라인;
+}
+
+.menubarColor {
+	width: 100%;
+	height: 20px;
+	color: blue;
+}
+
+Nav {
+	width: 100%;
+	height: 50px;
+	line-height: 100px;
+	background-color: #2196f3;
+}

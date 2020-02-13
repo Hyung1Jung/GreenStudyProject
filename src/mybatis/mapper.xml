@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="abc">
+
+<insert id="insert_Registrtion" parameterType="RegistrtionDto"><!-- dto 객체등록 -->
+Insert into study(s_title, s_type, main_language, secound_language, people_num, s_firsty, s_firstm, s_firstd, s_lasty, s_lastm, s_lastd, s_summary, s_expect, s_effect, memberid, date, date2, readcount) values(#{s_title}, #{s_type}, #{main_language}, #{secound_language}, #{people_num}, #{s_firsty}, #{s_firstm}, #{s_firstd},
+					#{s_lasty}, #{s_lastm}, #{s_lastd}, #{s_summary}, #{s_expect}, #{s_effect}, #{memberid}, #{date}, #{date2}, #{readcount});
+</insert>
+
+<select id="all_study" resultType="RegistrtionDto"> 
+select * from study;
+</select>
+
+<select id="studyArchive" resultType="RegistrtionDto"> <!-- 형태를 남긴다  List를써서 여러줄 받을수있음-->
+select * from study where date2 &lt;= now() AND s_type = 'abilityStudy';
+</select>
+
+<select id="projectArchive" resultType="RegistrtionDto"> <!-- 형태를 남긴다  List를써서 여러줄 받을수있음-->
+select * from study where date2 &lt;= now() AND s_type = 'projectStudy';
+</select>
+
+<select id="myStudySelect" resultType="RegistrtionDto"> 
+select * from study where id = #{id};
+</select>
+
+<delete id="delete_study" parameterType="RegistrtionDto">
+delete from study where s_num = #{s_num}
+</delete>
+
+<update id="studycount" parameterType="RegistrtionDto"><!-- dto 객체등록 -->
+update study set readcount = readcount + 1 where s_num = #{s_num};
+</update>
+
+</mapper>

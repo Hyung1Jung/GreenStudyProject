@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+.MyPageBoxMenu li {
+	margin: 100px;
+	display: inline;
+	float: left;
+	margin-top: 10px;
+	margin : 10px;
+	width: 200px;
+	height: 38px;
+	background-color: #2196f3;
+}
+
+.MyPageBoxMenuFont {
+	font-size: 19px;
+	font-weight: bold;
+	text-align: center;
+	color: #ffffff;
+	font-family: 휴먼둥근헤드라인;
+}
+
+.MyPageUnderMenu li {
+	margin: 100px;
+	display: inline;
+	float: left;
+	margin-top: 10px;
+	margin : 10px;
+	width: 200px;
+	height: 38px;
+	background-color: #2196f3;
+}
+
+.MyPageUnderMenuFont {
+	font-size: 19px;
+	font-weight: bold;
+	text-align: center;
+	color: #ffffff;
+	font-family: 휴먼둥근헤드라인;
+}
+
+.MyPageMenubarColor {
+	width: 1000px;
+	height: 20px;
+	color: blue;
+}
+
+.MypageMenuBox {
+	width: 100%;
+	height: 50px;
+	line-height: 100px;
+	background-color: #2196f3;
+}
+
+.menubarColor {
+	width: 100%;
+	height: 20px;
+	color: blue;
+}
+.MyPageUnderBox {
+	dispaly: inline-block;
+	width: 500px;
+	padding: 25px;
+	height : 400px;
+	border-radius: 30px;
+	margin-top: 110px;
+	background-color: #f5f5f5;
+}
+#MyPageUnderBox li {
+	margin: 10px;
+	font-weight : bold;
+}
+
+
+
