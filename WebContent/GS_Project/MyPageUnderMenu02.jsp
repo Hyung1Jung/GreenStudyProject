@@ -144,7 +144,7 @@
 		<br> <br>
 		<jsp:useBean id="dao" class="Dao.RegistrtionDao"></jsp:useBean>
 		<%
-			ArrayList<RegistrtionDto> dtos = dao.studySelect(id);
+			ArrayList<RegistrtionDto> dtos = dao.studySelect3(id);
 			for (int i = 0; i < dtos.size(); i++) {
 				String delink = "";
 				if (id != null) {

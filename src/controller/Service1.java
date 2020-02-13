@@ -67,7 +67,6 @@ public class Service1 implements Cominterface {
 		String s_num = request.getParameter("s_num");
 		int s_num2 = Integer.parseInt(s_num); 
 		
-		System.out.println(s_num);
 		Action1 del = Action1.instance();
 		del.studydelete(s_num2);
 

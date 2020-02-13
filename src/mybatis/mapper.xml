@@ -21,7 +21,7 @@ select * from study where date2 &lt;= now() AND s_type = 'projectStudy';
 </select>
 
 <select id="myStudySelect" resultType="RegistrtionDto"> 
-select * from study where id = #{id};
+select * from study where memberid = #{memberid};
 </select>
 
 <delete id="delete_study" parameterType="RegistrtionDto">

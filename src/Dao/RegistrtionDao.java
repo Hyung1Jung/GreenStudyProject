@@ -154,7 +154,7 @@ public class RegistrtionDao {
 			DbConnect();
 			state = conn.createStatement(); // state 연결
 
-			String input = "select * from study where id ='" + id + "'";// 출력 테이블 대입
+			String input = "select * from study where memberid ='" + id + "'";// 출력 테이블 대입
 			ResultSet aa = state.executeQuery(input);
 
 			while (aa.next()) {
@@ -175,7 +175,7 @@ public class RegistrtionDao {
 				dto2.setS_lasty(aa.getInt("s_lasty"));
 				dto2.setS_lastm(aa.getInt("s_lastm"));
 				dto2.setS_lastd(aa.getInt("s_lastd"));
-				dto2.setId(aa.getString("id"));
+				dto2.setMemberid(aa.getString("memberid"));
 				dto2.setS_num(aa.getInt("s_num"));
 				dto2.setDate(aa.getString("date"));
 				dto2.setDate2(aa.getString("date2"));
